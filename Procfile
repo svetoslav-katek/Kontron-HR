@@ -1,0 +1,1 @@
+web: gunicorn bolnichni_project:app
