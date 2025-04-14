@@ -8,7 +8,9 @@
 <p class="text-danger">Моля при проблем се свържете с отдел ЧР на Контрон Солар Бг.</p>
 <a href="/change_password" class="btn btn-warning btn-sm">Смени парола</a>
 {% if session['username'] == 'admin' %}<a href="/admin" class="btn btn-info btn-sm">Админ панел</a>{% endif %}
-<hr><form method="post" enctype="multipart/form-data">
+<a href="/home" class="btn btn-secondary btn-sm">Назад</a>
+<a href="/logout" class="btn btn-danger btn-sm">Изход</a>
+<hr><form method="post" action="/submit_sick_leave" enctype="multipart/form-data">
 <div class="mb-3"><label>От дата:</label><input type="date" name="from_date" class="form-control" required></div>
 <div class="mb-3"><label>До дата:</label><input type="date" name="to_date" class="form-control" required></div>
 <div class="mb-3"><label>Брой дни:</label><input type="number" name="days" class="form-control" required></div>
